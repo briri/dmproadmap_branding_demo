@@ -1,0 +1,69 @@
+defaults: &defaults
+  
+  organisation:
+    name: 'Digital Curation Centre (DCC)'
+
+    abbreviation: 'DCC'
+    url: 'https://github.com/DMPRoadmap/roadmap/wiki'
+    email: 'dmponline-test@dcc.ac.uk'
+    telephone: ''
+
+    address_line1: ''
+    address_line2: ''
+    address_line3: ''
+    address_line4: ''
+    address_country: ''
+
+    google_maps_link: ''
+
+  application:
+    name: 'DMPRoadmap'
+    url: 'https://github.com/DMPRoadmap/roadmap'
+    version: '0.3'
+    release_notes_url: 'https://github.com/DMPRoadmap/roadmap/wiki/Releases'
+    issue_list_url: 'https://github.com/DMPRoadmap/roadmap/issues'
+    user_group_subscription_url: 'http://listserv.ucop.edu/cgi-bin/wa.exe?SUBED1=ROADMAP-L&A=1'
+  
+  preferences:
+    email:
+      users:
+        new_comment: true
+        admin_privileges: true
+        added_as_coowner: true
+      owners_and_coowners:
+        visibility_changed: true
+      admins:
+        template_published: true
+        template_unpublished: true
+        feedback_requested: true
+  
+development:
+  <<: *defaults
+  
+  application:
+    name: 'DMPRoadmap'
+
+stage:
+  <<: *defaults
+
+  application:
+    name: 'DMPTool - STAGE'
+
+test:
+  <<: *defaults
+  
+  organisation:
+    name: 'Curation Centre Testing'
+    abbreviation: 'CC'
+
+  application:
+    name: 'DMPRoadmap - TEST'
+    
+production:
+  <<: *defaults
+
+migration:
+  <<: *defaults
+
+  application:
+    name: 'DMPTool - Migration'
