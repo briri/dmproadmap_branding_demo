@@ -1,9 +1,9 @@
 defaults: &defaults
   
   organisation:
-    name: 'Digital Curation Centre (DCC)'
+    name: 'Digital Curation Centre (DCC) and California Digital Library (CDL)'
 
-    abbreviation: 'DCC'
+    abbreviation: 'DCC & CDL'
     url: 'https://github.com/DMPRoadmap/roadmap/wiki'
     email: 'dmponline-test@dcc.ac.uk'
     telephone: ''
