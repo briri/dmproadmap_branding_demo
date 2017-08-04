@@ -1,8 +1,6 @@
 /* HOME PAGE */
 /* ------------------------------------------------ */
 div.roadmap main div.page div.content {
-  background-color: $body-background;
-	
 	p {
 		color: $primary-color;
 		font-size: 18px;
@@ -13,6 +11,31 @@ div.roadmap main div.page div.content {
 		border-right-color: $primary-color;
 	}
 	.tab-panel { background-color: $white; }
+	
+	.column-right {
+		position: absolute;
+		top: -165px;
+		right: 35px;
+	}
+	.column-left { 
+		position: absolute;
+		top: -45px;
+		
+		.get-started {
+			position: absolute;
+			top: -125px;
+			right: 35px;
+			
+			vertical-align: top;
+			
+			.fa {
+				color: $primary-color;
+				font-size: 2em;
+				padding-left: 20px;
+				padding-top: 25px;
+			}
+		}
+	}
 }
 
 
@@ -22,9 +45,7 @@ header, #notification-area, main, footer {
 	margin-right: auto;
 }
 div.roadmap header { 
-	position: relative; 
-	background-color: $body-background;
-	
+	height: 100%;
 	.header-left .home-logo { 
 		margin-right: 2px; 
 		vertical-align: bottom;
@@ -33,28 +54,33 @@ div.roadmap header {
 		margin-top: 0;
 	}
 	
-	.header-right .org-branding { height: 55%; }
+	.header-right {
+		vertical-align: top;
 	
-	.header-right .main-nav {
-		margin-top: 0;
+		h1 { width: 75%; }
+	
+		.main-nav {
+			margin-top: 0;
 		
-		ul.nav li { 
-			padding: 4px 15px; 
-			background-color: $medium-grey;
-			border: none;
-			border-bottom: 1px solid $primary_color;
-		}
-		ul.nav li.active {
-			background-color: $primary-color;
-
-			a:link, a:focus, a:visited {
-				color: $white;
+			ul.nav li { 
+				padding: 4px 15px; 
+				background-color: $medium-grey;
+				border: none;
+				border-bottom: 1px solid $primary_color;
 			}
-		} 
+			ul.nav li.active {
+				background-color: $primary-color;
+
+				a:link, a:focus, a:visited {
+					color: $white;
+				}
+			} 
+		}
 	}
 }
-div.roadmap header .signin-signout-menu {
-	position: relative;
-	float: right;
-	top: -145px;
+footer {
+  background-image: url("rainbow_wave_long.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
 }

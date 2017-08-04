@@ -1,11 +1,11 @@
 defaults: &defaults
   
   organisation:
-    name: 'Digital Curation Centre (DCC)'
+    name: 'Magic Unicorns Anonymous (MUA)'
 
-    abbreviation: 'DCC'
+    abbreviation: 'MUA'
     url: 'https://github.com/DMPRoadmap/roadmap/wiki'
-    email: 'dmponline-test@dcc.ac.uk'
+    email: 'unicorn@magicland.org'
     telephone: ''
 
     address_line1: ''
@@ -17,7 +17,7 @@ defaults: &defaults
     google_maps_link: ''
 
   application:
-    name: 'DMPRoadmap'
+    name: 'DMP Rainbow'
     url: 'https://github.com/DMPRoadmap/roadmap'
     version: '0.3'
     release_notes_url: 'https://github.com/DMPRoadmap/roadmap/wiki/Releases'
