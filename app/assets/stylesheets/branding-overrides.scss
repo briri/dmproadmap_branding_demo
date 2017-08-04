@@ -1,6 +1,6 @@
 /* HOME PAGE */
 /* ------------------------------------------------ */
-#home {
+div.roadmap main div.page div.content {
   background-color: $body-background;
 	
 	p {
@@ -28,6 +28,9 @@ div.roadmap header {
 	.header-left .home-logo { 
 		margin-right: 2px; 
 		vertical-align: bottom;
+	}
+	.header-left .roadmap-logo {
+		margin-top: 0;
 	}
 	
 	.header-right .org-branding { height: 55%; }
