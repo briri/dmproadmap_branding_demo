@@ -33,7 +33,13 @@ div.roadmap header {
 		margin-top: 0;
 	}
 	
-	.header-right .org-branding { height: 55%; }
+	.header-right .org-branding { 
+		height: 55%; 
+		text-align: center;
+		padding-bottom: 15px;
+		
+		a { color: $primary-color; }
+	}
 	
 	.header-right .main-nav {
 		margin-top: 0;
@@ -54,7 +60,44 @@ div.roadmap header {
 	}
 }
 div.roadmap header .signin-signout-menu {
-	position: relative;
+	position: absolute;
+	top: -15px;
 	float: right;
-	top: -145px;
+}
+
+.navbar {
+	list-style: none;
+	ul { list-style: none; }
+}
+
+div.roadmap header .signin-signout-menu ul li a { 
+	color: $primary-color; 
+	.caret { 
+		border-top-color: $primary-color; 
+	}
+}
+div.roadmap header .signin-signout-menu a { text-decoration: underline; }
+
+#notification-area {
+	float: none;
+	width: 95%;
+}
+
+tbody {
+	background-color: $white;
+}
+
+.dropdown-menu {
+	visibility: hidden;
+	background-color: #827D7E;
+	padding: 6px 15px;
+	border-radius: 3px;
+}
+
+div.roadmap header .signin-signout-menu ul li {
+	margin-bottom: 10px;
+}
+div.roadmap header .signin-signout-menu ul li a:not(.dropdown) {
+	color: $white;
+	font-size: 16px;
 }

@@ -1,18 +1,12 @@
 <!-- header information -->
 <div class="header-left">
-  <% if user_signed_in? && !current_user.org.nil? && current_user.org.logo.present? %>
-    <div class="home-logo">
-      <%= link_to(image_tag(current_user.org.logo.thumb('100x100%').url, alt: current_user.org.name), current_user.org.target_url) %>
-    </div>
-  <% else %>
-    <div class="home-logo roadmap-logo">
-      <%= link_to(image_tag("logo.jpg", alt: "#{Rails.configuration.branding[:application][:name]} #{_('logo')}"), root_path, title: Rails.configuration.branding[:application][:name]) %>
-    </div>
-  <% end %>
+  <div class="home-logo roadmap-logo">
+    <%= link_to(image_tag("logo.jpg", alt: "#{Rails.configuration.branding[:application][:name]} #{_('logo')}"), root_path, title: Rails.configuration.branding[:application][:name]) %>
+  </div>
 </div>
 <div class="header-right">  
   <div class="org-branding">
-    <%= render "layouts/branding" %>
+		<p>The University has a <a href="http://www.ed.ac.uk/schools-departments/information-services/about/policies-and-regulations/research-data-policy">Research Data Management</a> policy and provides many services to support data management and sharing. See the <a href="http://www.ed.ac.uk/schools-departments/information-services/research-support/data-management/data-management-home">RDM webpages</a> for more information.</p>
   </div>
   
   <div class="main-nav">
